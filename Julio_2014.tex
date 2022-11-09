@@ -1,0 +1,112 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+%Fuente (compilarlo en Latex.pdf normal porque va más rápido y luego
+%y al final insertarlo en Arial) DA ERROR
+%\usepackage{fontspec}
+%\setmainfont{Arial}
+
+%Estructura de la Página
+\usepackage[left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
+
+%Páginas en horizontal
+
+
+%Pies de página y encabezado
+\usepackage{fancyhdr}
+
+%Comentario párrafos
+\usepackage{verbatim}
+
+%Paquete arquitectura página
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{José Honrubia Blanco}
+\rhead{Exámenes Ingeniería Térmica.}
+\rfoot{\thepage}
+\lfoot{Academia David Martínez}
+
+%Interlineado
+\renewcommand{\baselinestretch}{0.5}
+
+
+
+%Paquete Matemático
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{breqn}
+
+%Paquete para el código
+% Paquetes Listing
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+%Settings 
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+
+\lstdefinestyle{mystyle}{
+ backgroundcolor=\color{backcolour},   
+ commentstyle=\color{codegreen},
+ keywordstyle=\color{magenta},
+ numberstyle=\tiny\color{codegray},
+ stringstyle=\color{codepurple},
+ basicstyle=\ttfamily\footnotesize,
+ breakatwhitespace=false,         
+ breaklines=true,                 
+ captionpos=b,                    
+ keepspaces=true,                 
+ numbers=left,                    
+ numbersep=5pt,                  
+ showspaces=false,                
+ showstringspaces=false,
+ showtabs=false,                  
+ tabsize=2
+}
+
+\lstset{style=mystyle}
+%Paquete Imágenes
+
+\usepackage{graphicx}
+\graphicspath{ {img/} }
+\usepackage{subfig}
+
+%Bibliografía
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{referencias.bib}
+
+%Espacio entre párrafos
+\setlength{\parskip}{0.5cm}
+%Sangría
+\setlength{\parindent}{0cm}
+
+\title{Exámenes Ingeniería Térmica}
+\author{José Honrubia Blanco }
+\date{Noviembre 2022}
+
+\begin{document}
+
+\section{Examen Julio 2014}
+\subsection{TEORÍA (NO HACE FALTA USAR LAS TABLAS)}
+\textbf{Pregunta 1}. (1 punto) Un dispositivo pistón-cilindro contiene 50kg de agua a 250 kPa y 25 ºC. El área de la seeción transversal del pistón es 0,1 m^{2}. Transferimos calor al agua, haciendo que parte de ella se evapore. Cuando el volumen alcanza los 0.2 m^{3}, el pistón choca con un muelle lineal cuya constante elástica es 100 kN/m. Seguimos transfiriendo calro al agua hasta que el pistón se eleva 20 cm más. Determine: 1. Representar el proceso en un diagrama P-V, 2. presión y temperatura final y 3. trabajo realizado durante este proceso. 
+\\ 
+\textbf{Pregunta 2}. (1 punto) Un motor de un buque funciona según un ciclod e Carnot que extrae calor del agua del mar a 18 ºC y cede una parte a un depósito de hielo seco a $-$78 ºC. Sie l motor debe desarrollar 8000 CV de potencia, ¿cuánto hielo seco se consumirá durante la marcha de un día? El calor de sublimación del hielo seco es de 137 cal/g.
+\\
+\textbf{Pregunta 3}. (1 punto) sor toma 1 kg/s de aire a 1 bar a 25 ºC comprimiéndolo hasta 8 bar y 160 ºC. La transferencia de calor a su entorno es de 100 kW. Calcular la potencia consumida (kW) y defínase y evalúese la eficiencia exergética.
+\\
+\textbf{Pregunta 4}. (1 punto) Se introduce helio en una tobera adiabática que oepra en estado estacionario. Las condiciones a la entrada de la tobera son: 1300 K, 4 bar y velocidad de 10 m/s. A la salida, la temperatura del helio es de 900 K, la presión de 1.45 bar. Determinar: 
+1. la velocidad a la salida (m/s), 2. rendimiento de la tobera, 3. exergía destruida al pasar el gas a través de la tobera (kJ/kg). \\
+\textbf{Hipótesis:} Considerar el helio gas perfecto, $T_{0} = 20ºC$ y $P_{0} = 1 bar$.
+
+\subsection{PROBLEMAS}
+\textbf{Problema 1}. (\textbf{2 puntos}) Un cilindro rígido y adiabático, dispuesto horizontalmente, está dividido en dos compartimentos por un émbolo muy delgado y aislante, sujeto inicialmente por unos topes. El compartimento A (el de la izquierda)tiene 10 cm de longitud
+y contiene iniucialmente agua a 20 bar y 250 ºC. El compartimento B tiene 50 cm de longitud y contiene inicialmente agua a 10 bar y 700 ºC. La sección del cilindro y émbolo es de 0.1 m^{2}. Se retiran los topes y el émbolo pierde sus propiedades aislante comenzando a moverse lentamente hasta que la presión y la temperatura de ambos compartimentos se igualan. Calcular la presión y temperatura final y la distancia recorrida por el émbolo.
+
+\end{document}
