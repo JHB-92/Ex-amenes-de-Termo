@@ -1,0 +1,149 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+%Fuente (compilarlo en Latex.pdf normal porque va más rápido y luego
+%y al final insertarlo en Arial) DA ERROR
+%\usepackage{fontspec}
+%\setmainfont{Arial}
+
+%Estructura de la Página
+\usepackage[left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
+
+%Páginas en horizontal
+
+
+%Pies de página y encabezado
+\usepackage{fancyhdr}
+
+%Comentario párrafos
+\usepackage{verbatim}
+
+%Paquete arquitectura página
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{José Honrubia Blanco}
+\rhead{Exámenes Ingeniería Térmica.}
+\rfoot{\thepage}
+\lfoot{Academia David Martínez}
+
+%Interlineado
+\renewcommand{\baselinestretch}{1}
+
+
+
+%Paquete Matemático
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{breqn}
+
+%Paquete para el código
+% Paquetes Listing
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+%Settings 
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+
+\lstdefinestyle{mystyle}{
+ backgroundcolor=\color{backcolour},   
+ commentstyle=\color{codegreen},
+ keywordstyle=\color{magenta},
+ numberstyle=\tiny\color{codegray},
+ stringstyle=\color{codepurple},
+ basicstyle=\ttfamily\footnotesize,
+ breakatwhitespace=false,         
+ breaklines=true,                 
+ captionpos=b,                    
+ keepspaces=true,                 
+ numbers=left,                    
+ numbersep=5pt,                  
+ showspaces=false,                
+ showstringspaces=false,
+ showtabs=false,                  
+ tabsize=2
+}
+
+\lstset{style=mystyle}
+%Paquete Imágenes
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+\graphicspath{ {imagenes/} }
+
+
+
+%Bibliografía
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{referencias.bib}
+
+%Espacio entre párrafos
+\setlength{\parskip}{0.05cm}
+%Sangría
+\setlength{\parindent}{0cm}
+
+
+
+
+\title{Exámenes Ingeniería Térmica}
+\author{José Honrubia Blanco }
+\date{Noviembre 2022}
+
+\begin{document}
+
+\section{Examen Octubre 2020}
+\subsection{TEORÍA}
+\textbf{Pregunta 1}. (1 punto) Un flujo de agua entra a una turbina con una presión de 30 bar y una temperatura de 400 ºC. El vapor sale saturado a 100 ºC. Si el proceso se realiza adiabáticamente en condiciones de estado estacionario, calcular:
+\begin{itemize}
+    \item La exergía destruida teniendo en cuenta que $T _{0}=20$ ºC.
+    \item La eficiciencia exergética de la turbina.
+\end{itemize}
+
+\\ 
+\textbf{Pregunta 2}. (1 punto) Aire en reposo ($\gamma = 1.4$ y $R = 287 \frac{J}{kg\cdot K}$) a 5 bar y 750 K penetra en una tobera de laval, convergente-divergente, y es conducido hasta un depósito donde la presión es de 0.3 bar e igual a la presión de salida de la tobera (tobera adaptada). En condiciones isoentrópicas, calcular la relación de áreas $\frac{A _{s}}{A _{c}}$
+\\
+\textbf{Pregunta 3}. (1 punto) Representar el diagrama T-s de un ciclo de Carnot y demostrar que el rendimiento térmico de una máquina de Carnot que oepra entre los límites de temperaturas $T _{1}$ y $T _{2}$, donde $T _{1}$ > $ T _{2}$, es una función exclusiva de estas dos temperaturas y que vale:
+\begin{equation}
+    \eta = 1 - \frac{T _{2}}{T _{1}}
+  \label{eqn:}
+\end{equation}
+
+\textbf{Pregunta 4}. (1 punto) Considere el proceso de fabricaión de una ventana de vidrio de grandes dimensiones, ancho x largo y espesor muy pequeño. La ventana se encuentra apoyada en el horno en sus dimensiones ancho por largo en su cara inferior y la temperatura de la cara expuesta al aire, cara superior, se encuentra a 600 ºC. La superficie de la misma se considera gris y difusa. Para enfriar el vidrio se hace pasar aire sobre la superficie de modo que el coeficiente de transferencia de calro por convección es $5 \frac{W}{m ^{2}K}$. Si la conductividad térmica del vidrio es de $1.4 \frac{W}{m\cdot K}$, la emisividad superficial de 0.8 y la temperatura de los alrededores de 345 ºC. Calcule para el proceso en estado estacionario, cuál debe ser el graciente de temperaturas ($\frac{dT}{dx}$) que hace que el vidrio no se rompa durante su enfriamiento($\frac{ºC}{m}$). 
+\\
+
+\subsection{PROBLEMAS}
+\textbf{Problema 1}. (\textbf{2 puntos}) Un dispositivo cilindro-embolo al inicio contiene vapor de agua a $4 MPa$ y 260 ºC. El vapor pierde calor hacia el entorno y el émbolo desciende sin rozamienot hasta chocar con unos topes, punto en el que el cilindro contine agua líquida saturada. El enfriamiento continua hasta que la temperatura alcanza los 200 ºC. Calcular:
+\begin{itemize}
+    \item El cambio de entalpía por unidad de masa del vapor en el momento en que el émbolo llega a los topes $\frac{kJ}{kg}$.
+    \item La presión final (bar) y el título (si hay mezcla)
+    \item Calor cedido al ambiente ($\frac{kJ}{kg}$) y energía disponible perdida durante el proceso si $T _{0} = 10$ ºC y $T _{1}= 227$ ºC (temperatura media a la que se cede el calor al entorno)
+\end{itemize}
+
+\textbf{Problema 2}. (\textbf{2 puntos}) De un ciclo Otto se conocen los siguientes datos:
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{ll|ll}
+    \hline
+    $P _{1}$  & 1 bar & $H _{u}$ & 44000 kJ/kg \\
+    $\gamma$  & 1.4   & $V _{1}$ & 650         \\
+    D & 29    & $\rho _{a}$ & 1.293       \\
+    $\frac{P _{4}}{P _{1}} =\frac{T _{4}}{T _{1} }$  & 3     & $\eta _{V}$ & 0.7         \\
+     $Q _{ap}$  & $3\cdot Q _{ced}$     &  &             \\ \hline
+    \end{tabular}
+\end{table}
+Calcular:
+\begin{itemize}
+    \item El volumen ($cm ^{3}$) y la presión (bar) en cada punto del ciclo
+    \item Cantidad de aire y gasolina que intervienen (g)
+\end{itemize}
+
+\textbf{Problema 3}. (\textbf{2 puntos}) 
+
+\end{document}
